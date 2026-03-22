@@ -1,15 +1,10 @@
 package noa.ignite.assignment.parse;
 
-import noa.ignite.assignment.ingestion.LeadProcessor;
+import noa.ignite.assignment.model.Lead;
 
 import java.util.Map;
 
 public abstract class Source {
-    protected final LeadProcessor processor;
-
-    protected Source(LeadProcessor processor) {
-        this.processor = processor;
-    }
 
     protected String read(Map<String, Object> data, String key) {
         if (data == null || data.get(key) == null) {
@@ -18,5 +13,5 @@ public abstract class Source {
         return String.valueOf(data.get(key)).trim();
     }
 
-    public abstract void process(Map<String, Object> data);
+    public abstract Lead process(Map<String, Object> data);
 }

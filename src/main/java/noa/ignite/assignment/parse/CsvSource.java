@@ -1,15 +1,14 @@
 package noa.ignite.assignment.parse;
 
-import noa.ignite.assignment.ingestion.LeadProcessor;
 import noa.ignite.assignment.model.*;
 import java.util.Map;
 
 public class CsvSource extends Source {
-    public CsvSource(LeadProcessor processor) { super(processor); }
+    public CsvSource() { }
 
     @Override
-    public void process(Map<String, Object> data) {
-        Lead lead = new Lead(
+    public Lead process(Map<String, Object> data) {
+        return new Lead(
                 read(data, "First_Name"),
                 read(data, "Last_Name"),
                 read(data, "Email"),
@@ -17,6 +16,5 @@ public class CsvSource extends Source {
                 new Territory(TerritoryType.fromString(read(data, "Region"))),
                 LeadSource.CSV
         );
-        processor.processIncomingLead(lead);
     }
 }
