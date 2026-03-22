@@ -10,22 +10,25 @@ public class LeadIngestionHub {
     private final WebhookSource webhook;
     private final CsvSource csv;
     private final ThirdPartyApiSource api;
+    private final LeadProcessor processor;
 
     public LeadIngestionHub(LeadProcessor processor) {
-        this.webhook = new WebhookSource(processor);
-        this.csv = new CsvSource(processor);
-        this.api = new ThirdPartyApiSource(processor);
+        this.webhook = new WebhookSource();
+        this.csv = new CsvSource();
+        this.api = new ThirdPartyApiSource();
+        this.processor = processor;
     }
 
     public void fromWebhook(Map<String, Object> data) {
-        webhook.process(data);
+        processor.processIncomingLead(webhook.process(data));
+
     }
 
     public void fromCsvRow(Map<String, Object> data) {
-        csv.process(data);
+        processor.processIncomingLead(csv.process(data));
     }
 
     public void fromThirdPartyApi(Map<String, Object> data) {
-        api.process(data);
+        processor.processIncomingLead(api.process(data));
     }
 }
