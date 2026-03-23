@@ -1,0 +1,11 @@
+First_Name,Last_Name,Email,Company,Region
+Kara,Zor-El,kara@super.com,CatCo,US
+Kara,Zor-El,kara@super.com,CatCo,US
+Lex,Luthor,lex@lexcorp.com,LexCorp,US
+Selina,Kyle,selina@cats.com,,EU
+Harvey,Dent,harvey@gotham.gov,District Attorney,US
+,,missing@fields.com,Secret,US
+Pamela,Isley,pam@ivy.org,Botanical,EU
+Jack,Napier,joker@ha.com,Comedy,US
+Edward,Nygma,ed@riddles.net,Enigma,US
+John,Constantine,john@hell.org,Magic,EU

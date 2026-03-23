@@ -1,8 +1,8 @@
 package noa.ignite.assignment.ingestion;
 
-import noa.ignite.assignment.parse.CsvSource;
-import noa.ignite.assignment.parse.ThirdPartyApiSource;
-import noa.ignite.assignment.parse.WebhookSource;
+import noa.ignite.assignment.sources.CsvSource;
+import noa.ignite.assignment.sources.ThirdPartyApiSource;
+import noa.ignite.assignment.sources.WebhookSource;
 
 import java.util.Map;
 

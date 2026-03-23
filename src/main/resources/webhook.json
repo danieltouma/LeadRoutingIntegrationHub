@@ -1,0 +1,12 @@
+[
+  { "firstName": "Bruce", "lastName": "Wayne", "emailAddress": "bruce@wayne.com", "companyName": "Wayne Ent", "country": "EU" },
+  { "firstName": "Bruce", "lastName": "Wayne", "emailAddress": "bruce@wayne.com", "companyName": "Wayne Ent", "country": "EU" },
+  { "firstName": "Clark", "lastName": "Kent", "emailAddress": "clark@dailyplanet.com", "companyName": "Daily Planet", "country": "US" },
+  { "firstName": "Diana", "lastName": "Prince", "emailAddress": "diana@amazon.com", "companyName": "Justice League", "country": "EU" },
+  { "firstName": "Unknown", "lastName": "User", "emailAddress": "", "companyName": "No Email Corp", "country": "US" },
+  { "firstName": "Barry", "lastName": "Allen", "emailAddress": "barry@flash.com", "companyName": "CCPD", "country": "US" },
+  { "firstName": "Arthur", "lastName": "Curry", "emailAddress": "arthur@atlantis.org", "companyName": "Seven Seas", "country": "EU" },
+  { "firstName": "Hal", "lastName": "Jordan", "emailAddress": "hal@gl.com", "companyName": "Ferris Air", "country": "US" },
+  { "firstName": "Victor", "lastName": "Stone", "emailAddress": "vic@cyborg.com", "companyName": "STAR Labs", "country": "Mars" },
+  { "firstName": "Bruce", "lastName": "Wayne", "emailAddress": "bruce@wayne.com", "companyName": "Wayne Ent", "country": "US" }
+]
