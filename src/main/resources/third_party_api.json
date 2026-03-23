@@ -1,0 +1,12 @@
+[
+  { "user": { "name": { "first": "Zatanna", "last": "Zatara" }, "contact": { "email": "z@magic.com" } }, "employer": "Showbiz", "location": { "countryCode": "EU" } },
+  { "user": { "name": { "first": "Zatanna", "last": "Zatara" }, "contact": { "email": "z@magic.com" } }, "employer": "Showbiz", "location": { "countryCode": "EU" } },
+  { "user": { "name": { "first": "Dick", "last": "Grayson" }, "contact": { "email": "dick@bpd.gov" } }, "employer": "Bludhaven PD", "location": { "countryCode": "US" } },
+  { "user": { "name": { "first": "Jason", "last": "Todd" }, "contact": { "email": "jason@red.com" } }, "employer": "Outlaws", "location": { "countryCode": "US" } },
+  { "user": null, "employer": "Broken Object", "location": { "countryCode": "US" } },
+  { "user": { "name": { "first": "Tim", "last": "Drake" }, "contact": { "email": "tim@wayne.com" } }, "employer": "Wayne Ent", "location": { "countryCode": "US" } },
+  { "user": { "name": { "first": "Barbara", "last": "Gordon" }, "contact": { "email": "babs@gcpd.gov" } }, "employer": "GCPD", "location": { "countryCode": "US" } },
+  { "user": { "name": { "first": "Lois", "last": "Lane" }, "contact": { "email": "lois@planet.com" } }, "employer": "Daily Planet", "location": { "countryCode": "US" } },
+  { "user": { "name": { "first": "James", "last": "Gordon" }, "contact": { "email": "jim@gcpd.gov" } }, "employer": "Police", "location": { "countryCode": "US" } },
+  { "user": { "name": { "first": "Harleen", "last": "Quinzel" }, "contact": { "email": "harly@arkham.com" } }, "employer": "Psychology", "location": { "countryCode": "US" } }
+]

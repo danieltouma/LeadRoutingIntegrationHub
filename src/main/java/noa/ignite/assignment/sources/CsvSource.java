@@ -1,4 +1,4 @@
-package noa.ignite.assignment.parse;
+package noa.ignite.assignment.sources;
 
 import noa.ignite.assignment.model.*;
 import java.util.Map;
