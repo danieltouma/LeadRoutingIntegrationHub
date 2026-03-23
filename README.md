@@ -13,3 +13,9 @@ Capacity Aware Round Robin algorithm.
 ## How to Run
 1. Ensure you have JDK 17+ installed.
 2. Run `noa.ignite.assignment.Main` to start the live prototype simulation.
+
+## System Architecture
+![System Architecture Diagram](System%20Architecture%20Diagram.png)
+
+## Database Schema (ERD)
+![ERD](ERD.png)
