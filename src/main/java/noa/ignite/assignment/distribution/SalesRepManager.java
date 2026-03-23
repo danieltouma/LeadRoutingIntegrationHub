@@ -7,10 +7,6 @@ import noa.ignite.assignment.data.SalesRepStore;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Manages the high level administrative tasks for sales representatives.
- * It coordinates the lifecycle of reps across the database, distribution queue, and workload.
- */
 public class SalesRepManager {
     private final SalesRepStore salesRepStore;
     private final RegionalRepQueue regionalRepQueue;
@@ -22,7 +18,7 @@ public class SalesRepManager {
         this.leadManager = leadManager;
     }
 
-    public void registerNewRep(SalesRep rep) {
+    public synchronized void registerNewRep(SalesRep rep) {
         // Basic field validation check
         if (!ValidationUtils.isValidRep(rep)) {
             System.out.println("SalesRep missing required fields.");
@@ -41,7 +37,7 @@ public class SalesRepManager {
         System.out.println(rep + " is now active in the system.");
     }
 
-    public void terminateRep(SalesRep rep) {
+    public synchronized void terminateRep(SalesRep rep) {
         if (rep == null || rep.getEmail() == null) return;
 
         // Fetch the fresh state from the store to ensure data consistency
